@@ -1,9 +1,145 @@
-<!doctype html>
-<head>
-    <title> b l a n k </title>
-</head>
+<html>
 
-<body>
-   <canvas id="cnv_element"></canvas>
-   <script src="script.js"></script>
-</body>
+    <head>
+    <title>
+            Icon of legacy!
+    </title>
+        <style>
+            .row{
+                width:720px;
+                margin: 10px auto 10px auto ;
+            }
+            .image-container {
+                display: table-cell;
+                vertical-align: middle;
+                padding:20px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>
+            This is the main heading! 
+        <h1>   
+        <h2>
+            This is a subheading!
+        </h2> 
+        <div class="row">
+            <div class="image-container"><img id="rice1_id" src="img/rice1.png" height="200" width="200"/></div>
+            <div class="image-container"><img id="aodai1_id" src="img/aodai1.png" height="200" width="200"/></div>
+            <div class="image-container"><img id="buffalo1_id" src="img/buffalo1.png" height="200" width="200"/></div>
+        </div>
+
+        <div class="row">
+            <div class="image-container"><img id="drum1_id" src="img/drum1.png" height="200" width="200"/></div>
+            <div class="image-container"><img id="lotus1_id" src="img/lotus1.png" height="200" width="200"/></div>
+            <div class="image-container"><img id="house1_id" src="img/house1.png" height="200" width="200"/></div>
+            </div>
+
+        <div class="row">
+            <div class="image-container"><img id="flag1_id" src="img/flag1.png" height="200" width="200"/></div>
+            <div class="image-container"><img id="phoenix1_id" src="img/phoenix1.png" height="200" width="200"/></div>
+            <div class="image-container"><img id="bep1_id" src="img/bep1.png" height="200" width="200"/></div>
+        </div>      
+    </body>
+
+</html>
+<script>
+    const rice1_el = document.getElementById ('rice1_id')
+    const rice1_sound = new Audio ('sounds/rice.mp3')
+    rice1_el.onpointerdown = () => {
+        rice1_el.src = 'img/rice2.png'
+        rice1_sound.play ()
+        setTimeout (() => {
+            rice1_el.src = 'img/rice1.png'
+        }, 1000)
+    }
+</script>
+<script>
+    const aodai1_el = document.getElementById ('aodai1_id')
+    const aodai1_sound = new Audio ('sounds/aodai.mp3')
+    aodai1_el.onpointerdown = () => {
+        aodai1_el.src = 'img/aodai2.png'
+        aodai1_sound.play ()
+        setTimeout (() => {
+            aodai1_el.src = 'img/aodai1.png'
+        }, 1000)
+    }
+</script>
+<script>
+    const buffalo1_el = document.getElementById ('buffalo1_id')
+    const buffalo1_sound = new Audio ('sounds/buffalo.mp3')
+    buffalo1_el.onpointerdown = () => {
+        buffalo1_el.src = 'img/buffalo2.png'
+        buffalo1_sound.play ()
+        setTimeout (() => {
+            buffalo1_el.src = 'img/buffalo1.png'
+        }, 1000)
+    }
+</script>
+<script>
+    const lotus1_el = document.getElementById ('lotus1_id')
+    const lotus1_sound = new Audio ('sounds/lotus.mp3')
+    lotus1_el.onpointerdown = () => {
+        lotus1_el.src = 'img/lotus2.png'
+        lotus1_sound.play ()
+        setTimeout (() => {
+            lotus1_el.src = 'img/lotus1.png'
+        }, 1000)
+    }
+</script>
+<script>
+    const drum1_el = document.getElementById ('drum1_id')
+    const drum1_sound = new Audio ('sounds/drum.mp3')
+    drum1_el.onpointerdown = () => {
+        drum1_el.src = 'img/drum2.png'
+        drum1_sound.play ()
+        setTimeout (() => {
+            drum1_el.src = 'img/drum1.png'
+        }, 1000)
+    }
+</script>
+<script>
+    const house1_el = document.getElementById ('house1_id')
+    const house1_sound = new Audio ('sounds/house.mp3')
+    house1_el.onpointerdown = () => {
+        house1_el.src = 'img/house2.png'
+        house1_sound.play ()
+        setTimeout (() => {
+            house1_el.src = 'img/house1.png'
+        }, 1000)
+    }
+</script>
+<script>
+    const flag1_el = document.getElementById ('flag1_id')
+    const flag1_sound = new Audio ('sounds/flag.mp3')
+    flag1_el.onpointerdown = () => {
+        flag1_el.src = 'img/flag2.png'
+        flag1_sound.play ()
+        setTimeout (() => {
+            flag1_el.src = 'img/flag1.png'
+        }, 1000)
+    }
+</script>
+<script>
+    const phoenix1_el = document.getElementById ('phoenix1_id')
+    const phoenix1_sound = new Audio ('sounds/phoenix.mp3')
+    phoenix1_el.onpointerdown = () => {
+        phoenix1_el.src = 'img/phoenix2.png'
+        phoenix1_sound.play ()
+        setTimeout (() => {
+            phoenix1_el.src = 'img/phoenix1.png'
+        }, 1000)
+    }
+</script>
+<script>
+    const bep1_el = document.getElementById ('bep1_id')
+    const bep1_sound = new Audio ('sounds/bep.mp3')
+    bep1_el.onpointerdown = () => {
+        bep1_el.src = 'img/bep2.png'
+        bep1_sound.play ()
+        setTimeout (() => {
+            bep1_el.src = 'img/bep1.png'
+        }, 1000)
+    }
+</script>
